@@ -10,10 +10,11 @@
 <body>
   <img src="./images/logo.svg" alt="Splitter" class="logo">
   <main>
-    <div class="content">
+    <div class="options">
       <div class="bill-div">
           <label for="bill">Bill</label>
           <input type="number" name="bill" id="bill" value="142.55">
+          <img src="./images/icon-dollar.svg" alt="dollar sign" id="dollar">
       </div>
       <div class="tip-div">
         <p>Select Tip %</p>
@@ -29,14 +30,22 @@
       <div class="people">
         <label for="num-people">Number of People</label>
         <input type="number" name="num-people" id="num-people" value="5">
-      </div>
-      <div class="total">
-        <p class="amount">Tip Ampount <span>/person</span></p>
-        <span class="tip-total" id="tip-person">4.27</span>
-        <p class="amount">Total <span>/person</span></p>
-        <button class="reset">Reset</button>
+        <img src="./images/icon-person.svg" alt="person icon" id="person">
       </div>
     </div>
+      <div class="total">
+        <div class="amount-div">
+          <p class="amount">Tip Amount</p>
+          <p class="per-person">/ person</p>
+          <p class="tip-total" id="tip-person">$4.27</p>
+        </div>
+        <div class="tip-total-div">
+          <p class="amount">Total</p>
+          <p class="per-person">/ person</p>
+          <p class="tip-total" id="total-person">$32.79</p>
+        </div>
+        <button id="reset">Reset</button>
+      </div>
   </main>
 </body>
 </html>
