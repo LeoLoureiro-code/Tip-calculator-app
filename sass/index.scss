@@ -17,6 +17,10 @@ body{
 
     .logo{
         padding-top: 3.1rem;
+
+        @media screen and (min-width: 1200px) {
+            padding-top: 10rem;
+        }
     }
 }
 
@@ -31,21 +35,42 @@ main{
     margin-top: 2.5rem;
     padding-bottom: 2rem;
     width: 375px;
+
+    @media screen and (min-width: 1200px) {
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        flex-direction: row;
+        width: 920px;
+        padding-top: 0;
+        margin-top: 5.6rem;
+    }
 }
 
 .options{
     padding: 0 30px;
+
+    @media screen and (min-width: 1200px) {
+        width: 50%;
+    }
 }
 
 .bill-div{
     padding-top: 2rem;
     position: relative;
 
+    @media screen and (min-width: 1200px) {
+        padding-top: 2.9rem;
+    }
+
     label{
         color: $text;
         display: block;
         font-weight: 700;
         margin-bottom: 5px;
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 1rem;
+        }
     }
 
     #bill{
@@ -65,11 +90,19 @@ main{
         position: absolute;
         bottom: 12.5%;
         left: 6.3%;
+
+        @media screen and (min-width: 1200px) {
+            left: 9%;
+        }
     }
 }
 
 .tip-div{
     margin-top: 2rem;
+
+    @media screen and (min-width: 1200px) {
+       
+    }
 
     p{
         color: $text;
@@ -83,6 +116,11 @@ main{
         display: grid;
         gap: 14px;
         padding-top: 1rem;
+
+        @media screen and (min-width: 1200px) {
+            grid-template-columns: repeat(3, minmax(0, 1fr));;
+            grid-template-rows: repeat(2, minmax(0, 1fr));
+        }
        
         .tip-button{
             background-color: $bgButton;
@@ -136,6 +174,10 @@ main{
     margin-top: 1.9rem;
     padding: 0 25px;
     width: 330px;
+
+    @media screen and (min-width: 1200px) {
+        width: 50%;
+    }
 
     .amount-div{
         margin-top: 2.5rem;

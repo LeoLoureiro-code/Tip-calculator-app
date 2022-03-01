@@ -29,6 +29,12 @@ body .logo {
   padding-top: 3.1rem;
 }
 
+@media screen and (min-width: 1200px) {
+  body .logo {
+    padding-top: 10rem;
+  }
+}
+
 main {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -51,8 +57,28 @@ main {
   width: 375px;
 }
 
+@media screen and (min-width: 1200px) {
+  main {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 920px;
+    padding-top: 0;
+    margin-top: 5.6rem;
+  }
+}
+
 .options {
   padding: 0 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .options {
+    width: 50%;
+  }
 }
 
 .bill-div {
@@ -60,11 +86,23 @@ main {
   position: relative;
 }
 
+@media screen and (min-width: 1200px) {
+  .bill-div {
+    padding-top: 2.9rem;
+  }
+}
+
 .bill-div label {
   color: #5e7a7d;
   display: block;
   font-weight: 700;
   margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+  .bill-div label {
+    margin-left: 1rem;
+  }
 }
 
 .bill-div #bill {
@@ -86,6 +124,12 @@ main {
   left: 6.3%;
 }
 
+@media screen and (min-width: 1200px) {
+  .bill-div #dollar {
+    left: 9%;
+  }
+}
+
 .tip-div {
   margin-top: 2rem;
 }
@@ -105,6 +149,15 @@ main {
   display: grid;
   gap: 14px;
   padding-top: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .tip-div .buttons-div {
+    -ms-grid-columns: (minmax(0, 1fr))[3];
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    -ms-grid-rows: (minmax(0, 1fr))[2];
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .tip-div .buttons-div .tip-button {
@@ -157,6 +210,12 @@ main {
   margin-top: 1.9rem;
   padding: 0 25px;
   width: 330px;
+}
+
+@media screen and (min-width: 1200px) {
+  .total {
+    width: 50%;
+  }
 }
 
 .total .amount-div, .total .tip-total-div {
