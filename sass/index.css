@@ -118,6 +118,10 @@ main {
   width: 100%;
 }
 
+.bill-div #bill:hover {
+  cursor: pointer;
+}
+
 .bill-div #dollar {
   position: absolute;
   bottom: 12.5%;
@@ -171,9 +175,19 @@ main {
   padding: 7px 18px;
 }
 
+.tip-div .buttons-div .tip-button:hover {
+  background-color: #26c0ab;
+  color: #00494d;
+  cursor: pointer;
+}
+
 .tip-div .buttons-div #custom-percent {
   background-color: #f4fafa;
   text-align: end;
+}
+
+.tip-div .buttons-div #custom-percent:focus {
+  outline: 1px solid #26c0ab;
 }
 
 .people {
@@ -196,6 +210,10 @@ main {
   margin-top: 5px;
   padding: 8px 20px;
   width: 100%;
+}
+
+.people #num-people {
+  cursor: pointer;
 }
 
 .people #person {
@@ -259,5 +277,11 @@ main {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
   padding: 9px 110px;
+}
+
+.total #reset:hover {
+  background-color: #8be9dc;
+  color: #00494d;
+  cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */

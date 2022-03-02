@@ -86,6 +86,10 @@ main{
         width: 100%;
     }
 
+    #bill:hover{
+        cursor: pointer;
+    }
+
     #dollar{
         position: absolute;
         bottom: 12.5%;
@@ -133,10 +137,21 @@ main{
             padding: 7px 18px;
         }
 
+        .tip-button:hover{
+            background-color: $bgButtonActive;
+            color: $bgButton;
+            cursor: pointer;
+        }
+
         #custom-percent{
             background-color: $bgInput;
             text-align: end;
         }
+
+        #custom-percent:focus{
+            outline: 1px solid $bgButtonActive;
+        }
+
     }
 }
 
@@ -159,6 +174,10 @@ main{
         margin-top: 5px;
         padding: 8px 20px;
         width: 100%;
+    }
+
+    #num-people{
+        cursor: pointer;
     }
 
     #person{
@@ -221,5 +240,11 @@ main{
         margin-top: 2rem;
         margin-bottom: 1.5rem;
         padding: 9px 110px;
+    }
+
+    #reset:hover{
+        background-color: $bgHover;
+        color: $bgButton;
+        cursor: pointer;
     }
 }
