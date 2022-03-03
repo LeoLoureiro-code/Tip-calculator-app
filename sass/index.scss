@@ -105,13 +105,18 @@ main{
     margin-top: 2rem;
 
     @media screen and (min-width: 1200px) {
-       
+
     }
 
     p{
         color: $text;
         font-family: $fontFamily;
         font-weight: 600;
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 1rem;
+            padding-top: 0.5rem;
+        }
     }
 
     .buttons-div{
@@ -124,6 +129,8 @@ main{
         @media screen and (min-width: 1200px) {
             grid-template-columns: repeat(3, minmax(0, 1fr));;
             grid-template-rows: repeat(2, minmax(0, 1fr));
+            margin-left: 1rem;
+            width: 95%;
         }
        
         .tip-button{
@@ -159,9 +166,25 @@ main{
     margin-top: 2rem;
     position: relative;
 
+            
+    @media screen and (min-width:1200px) {
+        margin-top: 2.4rem;
+        margin-left: 1rem;
+    }
+
     label{
         color: $text;
         font-weight: 700;
+
+
+    }
+
+    .error-message{
+        color: red;
+        font-family: $fontFamily;
+        font-weight: 700;
+        display: none;
+        position: absolute;
     }
 
     #num-people{
@@ -174,6 +197,7 @@ main{
         margin-top: 5px;
         padding: 8px 20px;
         width: 100%;
+
     }
 
     #num-people{
