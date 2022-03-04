@@ -78,6 +78,9 @@ main {
 @media screen and (min-width: 1200px) {
   .options {
     width: 50%;
+    margin-right: 5px;
+    padding-left: 20px;
+    padding-right: 40px;
   }
 }
 
@@ -191,6 +194,8 @@ main {
 }
 
 .tip-div .buttons-div #custom-percent {
+  font-size: 24px;
+  padding-left: 5px;
   background-color: #f4fafa;
   text-align: end;
 }
@@ -256,13 +261,23 @@ main {
 
 @media screen and (min-width: 1200px) {
   .total {
-    width: 50%;
+    margin-right: 20px;
+    margin-top: 2rem;
+    width: 44.8%;
+    padding: 0;
+    height: 400px;
   }
 }
 
 .total .amount-div, .total .tip-total-div {
-  margin-top: 2.5rem;
+  margin-top: 2.4rem;
   position: relative;
+}
+
+@media screen and (min-width: 1200px) {
+  .total .amount-div, .total .tip-total-div {
+    margin-top: 3.4rem;
+  }
 }
 
 .total .amount-div .amount, .total .tip-total-div .amount {
@@ -270,10 +285,24 @@ main {
   font-family: "Space Mono", monospace;
 }
 
+@media screen and (min-width: 1200px) {
+  .total .amount-div .amount, .total .tip-total-div .amount {
+    padding-left: 40px;
+  }
+}
+
 .total .amount-div .per-person, .total .tip-total-div .per-person {
   color: #5e7a7d;
   font-size: 13px;
   font-weight: 700;
+}
+
+@media screen and (min-width: 1200px) {
+  .total .amount-div .per-person, .total .tip-total-div .per-person {
+    padding-left: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+  }
 }
 
 .total .amount-div .tip-total, .total .tip-total-div .tip-total {
@@ -286,8 +315,22 @@ main {
   top: -5px;
 }
 
+@media screen and (min-width: 1200px) {
+  .total .amount-div .tip-total, .total .tip-total-div .tip-total {
+    padding-right: 40px;
+    font-size: 48px;
+    top: -25%;
+  }
+}
+
 .total .tip-total-div {
   margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .total .tip-total-div {
+    margin-top: 2rem;
+  }
 }
 
 .total #reset {
@@ -301,6 +344,15 @@ main {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
   padding: 9px 110px;
+}
+
+@media screen and (min-width: 1200px) {
+  .total #reset {
+    display: block;
+    margin: 0 auto;
+    margin-top: 7rem;
+    width: 80%;
+  }
 }
 
 .total #reset:hover {

@@ -51,6 +51,9 @@ main{
 
     @media screen and (min-width: 1200px) {
         width: 50%;
+        margin-right: 5px;
+        padding-left: 20px;
+        padding-right: 40px;
     }
 }
 
@@ -151,6 +154,8 @@ main{
         }
 
         #custom-percent{
+            font-size: 24px;
+            padding-left: 5px;
             background-color: $bgInput;
             text-align: end;
         }
@@ -219,22 +224,40 @@ main{
     width: 330px;
 
     @media screen and (min-width: 1200px) {
-        width: 50%;
+        margin-right: 20px;
+        margin-top: 2rem;
+        width: 44.8%;
+        padding: 0;
+        height: 400px;
     }
 
     .amount-div{
-        margin-top: 2.5rem;
+        margin-top: 2.4rem;
         position: relative;
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 3.4rem;
+        }
 
         .amount{
             color: $bgMain;
             font-family: $fontFamily;
+
+            @media screen and (min-width: 1200px) {
+                padding-left: 40px;
+            }
         }
 
         .per-person{
             color: $text;
             font-size: 13px;
             font-weight: 700;
+
+            @media screen and (min-width: 1200px) {
+                padding-left: 40px;
+                padding-bottom: 20px;
+                margin-bottom: 0px;
+            }
         }
 
         .tip-total{
@@ -245,12 +268,22 @@ main{
             position: absolute;
             right: -2px;
             top: -5px;
+
+            @media screen and (min-width: 1200px) {
+                padding-right: 40px;
+                font-size: 48px;
+                top: -25%;
+            }
         }
     }
 
     .tip-total-div{
         @extend .amount-div;
         margin-top: 1.5rem;
+
+        @media screen and (min-width: 1200px){
+            margin-top: 2rem;
+        }
     }
 
     #reset{
@@ -264,6 +297,14 @@ main{
         margin-top: 2rem;
         margin-bottom: 1.5rem;
         padding: 9px 110px;
+
+        @media screen and (min-width: 1200px){
+            display: block;
+            margin: 0 auto;
+            margin-top: 7rem;
+            width: 80%;
+        
+        }
     }
 
     #reset:hover{
