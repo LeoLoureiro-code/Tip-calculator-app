@@ -67,6 +67,7 @@ main {
             flex-direction: row;
     width: 920px;
     padding-top: 0;
+    padding-bottom: 1.9rem;
     margin-top: 5.6rem;
   }
 }
@@ -79,6 +80,7 @@ main {
   .options {
     width: 50%;
     margin-right: 5px;
+    margin-bottom: 15px;
     padding-left: 20px;
     padding-right: 40px;
   }
@@ -251,6 +253,12 @@ main {
   left: 6%;
 }
 
+@media screen and (min-width: 1200px) {
+  .people #person {
+    left: 4%;
+  }
+}
+
 .total {
   background-color: #00494d;
   border-radius: 16px;
@@ -264,8 +272,8 @@ main {
     margin-right: 20px;
     margin-top: 2rem;
     width: 44.8%;
-    padding: 0;
-    height: 400px;
+    padding-top: 0;
+    height: 415px;
   }
 }
 
@@ -287,7 +295,7 @@ main {
 
 @media screen and (min-width: 1200px) {
   .total .amount-div .amount, .total .tip-total-div .amount {
-    padding-left: 40px;
+    padding-left: 15px;
   }
 }
 
@@ -299,7 +307,7 @@ main {
 
 @media screen and (min-width: 1200px) {
   .total .amount-div .per-person, .total .tip-total-div .per-person {
-    padding-left: 40px;
+    padding-left: 15px;
     padding-bottom: 20px;
     margin-bottom: 0px;
   }
@@ -317,7 +325,7 @@ main {
 
 @media screen and (min-width: 1200px) {
   .total .amount-div .tip-total, .total .tip-total-div .tip-total {
-    padding-right: 40px;
+    padding-right: 10px;
     font-size: 48px;
     top: -25%;
   }
@@ -335,6 +343,7 @@ main {
 
 .total #reset {
   background-color: #26c0ab;
+  border-radius: 5px;
   border: none;
   color: #00494d;
   font-family: "Space Mono", monospace;
@@ -351,7 +360,8 @@ main {
     display: block;
     margin: 0 auto;
     margin-top: 7rem;
-    width: 80%;
+    margin-bottom: 2rem;
+    width: 90%;
   }
 }
 
