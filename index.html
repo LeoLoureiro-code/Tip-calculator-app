@@ -8,46 +8,37 @@
   <title>Frontend Mentor | Tip calculator app</title>
 </head>
 <body>
-  <img src="./images/logo.svg" alt="Splitter" class="logo">
+  <div class="container">
+    <img src="./images/logo.svg" alt="Splitter" class="logo">
   <main>
-    <div class="options">
-      <div class="bill-div">
-          <label for="bill">Bill</label>
-          <input type="number" name="bill" id="bill" value="142.55">
-          <img src="./images/icon-dollar.svg" alt="dollar sign" id="dollar">
-      </div>
-      <div class="tip-div">
-        <p>Select Tip %</p>
-        <div class="buttons-div">
-          <button class="tip-button" id="five-percent">5%</button>
-          <button class="tip-button" id="ten-percent">10%</button>
-          <button class="tip-button" id="fifthteen-percent">15%</button>
-          <button class="tip-button" id="twentyfive-percent">25%</button>
-          <button class="tip-button" id="fifty-percent">50%</button>
-          <input class="tip-button" type="number" id="custom-percent" placeholder="Custom">
-        </div>
-      </div>
-      <div class="people">
-        <label for="num-people">Number of People</label>
-        <p class="error-message">Can't be zero</p>
-        <input type="number" name="num-people" id="num-people">
-        <img src="./images/icon-person.svg" alt="person icon" id="person">
-      </div>
+    <div class="content">
+      <div class="info">
+        <label for="bill">Bill</label>
+        <input type="number" name="bill" id="bill" value="">
+      <p class="select_tip">Select Tip %</p>
+      <div class="buttons_div">
+        <button class="tip_button">5%</button>
+        <button class="tip_button">10%</button>
+        <button class="tip_button">15%</button>
+        <button class="tip_button">25%</button>
+        <button class="tip_button">50%</button>
+        <input class="tip_button" type="number" id="custom_percent" placeholder="Custom">
     </div>
-      <div class="total">
-        <div class="amount-div">
-          <p class="amount">Tip Amount</p>
-          <p class="per-person">/ person</p>
-          <p class="tip-total" id="tip-person">$4.27</p>
-        </div>
-        <div class="tip-total-div">
-          <p class="amount">Total</p>
-          <p class="per-person">/ person</p>
-          <p class="tip-total" id="total-person">$32.79</p>
-        </div>
-        <button id="reset">Reset</button>
-      </div>
+      <label for="num-people">Number of People</label>
+      <input type="number" name="num-people" id="num-people">
+  </div>
+    <div class="total">
+        <p class="amount">Tip Amount</p>
+        <p class="per_person">/ person</p>
+        <p class="tip_total" id="tip_person"></p>
+        <p class="amount">Total</p>
+        <p class="per_person">/ person</p>
+        <p class="tip_total" id="total_person"></p>
+      <button id="reset">Reset</button>
+    </div>
+    </div>
   </main>
+</div>
   <script src="./index.js"></script>
 </body>
 </html>
