@@ -9,6 +9,8 @@ body {
   background-color: hsl(185deg, 41%, 84%);
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
@@ -27,14 +29,25 @@ body {
 main {
   width: 100%;
   margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 25px;
   width: 100%;
-  padding: 2rem 2rem;
+  padding: 2rem 1rem;
   font-family: "Space Mono", monospace;
+  width: 375px;
+}
+
+.info {
+  padding: 0 1rem;
 }
 
 #bill {
@@ -59,15 +72,42 @@ label {
 
 .buttons_div {
   margin-top: 1rem;
+  margin-bottom: 2rem;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 1rem;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
 }
 
 .tip_button {
   border-radius: 5px;
   border: none;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 0.7rem 1.8rem;
+  background-color: hsl(183deg, 100%, 15%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+.custom_percent {
+  text-align: end;
+}
+
+#num_people {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: hsl(189deg, 41%, 97%);
+}
+
+.total {
+  width: 330px;
+  background-color: hsl(183deg, 100%, 15%);
+  margin-top: 2.3rem;
+  border-radius: 15px;
+  padding: 0 1rem;
 }/*# sourceMappingURL=index.css.map */
