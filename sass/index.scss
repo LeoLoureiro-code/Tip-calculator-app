@@ -14,6 +14,26 @@ body{
     justify-content: center;
 }
 
+input{
+    font-family: $fontFamily;
+    font-size: 24px;
+    font-weight: 700;
+    color: $backgroundButtonActive;
+    padding: 0.7rem 1rem 0.5rem 0;
+    // letter-spacing: 0.2rem;
+    text-align: end;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
 .container{
     max-width: 1440px;
     display: flex;
@@ -86,7 +106,7 @@ label{
     border: none;
     font-weight: 700;
     font-size: 24px;
-    padding: 0.7rem 1.8rem;
+    padding: 0.4rem 1.8rem;
     background-color: $backgroundButton;
     color: $backgroundMain;
 }
@@ -108,7 +128,7 @@ label{
 .total{
     width: 330px;
     background-color: $backgroundButton;
-    margin-top: 2.3rem;
+    margin-top: 2.5rem;
     border-radius: 15px;
     padding: 0 1rem;
 }
